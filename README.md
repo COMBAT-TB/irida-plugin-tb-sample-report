@@ -1,4 +1,4 @@
-# tb-sample-report Pipeline Plugin
+# M. Tuberculosis sample report IRIDA Pipeline Plugin
 
 ![tb-sample-report-pipeline-plugin](https://github.com/COMBAT-TB/irida-plugin-tb-sample-report/workflows/tb-sample-report-pipeline-plugin/badge.svg)
 
