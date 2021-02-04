@@ -1,14 +1,24 @@
 # tb-sample-report Pipeline Plugin
 
-[![Build Status](https://travis-ci.org/COMBAT-TB/irida-pipeline-plugins.svg?branch=master)](https://travis-ci.org/COMBAT-TB/irida-pipeline-plugins)
 
-This project contains a tb-sample-report pipeline implemented as a plugin for the [IRIDA][] bioinformatics analysis system. This can be used as a template for implementing your own pipelines within IRIDA.
+This project contains pipeline to produce a per-sample report for *M. tuberculosis* implemented as a plugin for the [IRIDA][https://irida.ca] bioinformatics analysis system.
 
 Please see the pipeline documentation at <https://irida.corefacility.ca/documentation/developer/tools/pipelines/> for more details.
 
 ## Building/Packaging
 
 Building and packaging this code is accomplished using [Apache Maven][maven]. However, you will first need to install [IRIDA](https://github.com/phac-nml/irida) to your local Maven repository.
+
+## Using the IRIDA Builder Docker container
+
+To build using Docker and the IRIDA Builder Docker container, run:
+
+```bash
+mkdir output
+build/build_workflow.sh . output
+```
+
+The JAR file for the compiled pipeline will be in the `output` directory.
 
 ## Installing IRIDA to local Maven repository
 
@@ -40,8 +50,8 @@ If you have previously [setup IRIDA][irida-setup] before you may copy this JAR f
 
 The following dependencies are required in order to make use of this plugin.
 
-- [IRIDA][] >= 19.01.1
-- [Java][] >= 1.8 and [Maven][maven] (for building)
+- [IRIDA][] >= 21.01
+- [Java][] >= 1.11 and [Maven][maven] (for building)
 
 [maven]: https://maven.apache.org/
 [irida]: http://irida.ca/
