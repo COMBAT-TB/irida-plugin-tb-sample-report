@@ -1,5 +1,6 @@
 # tb-sample-report Pipeline Plugin
 
+![tb-sample-report-pipeline-plugin](https://github.com/COMBAT-TB/irida-plugin-tb-sample-report/workflows/tb-sample-report-pipeline-plugin/badge.svg)
 
 This project contains pipeline to produce a per-sample report for *M. tuberculosis* implemented as a plugin for the [IRIDA][https://irida.ca] bioinformatics analysis system.
 
