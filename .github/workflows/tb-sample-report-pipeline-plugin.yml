@@ -11,8 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build plugin
-        run: mkdir output
-        run: build/build_workflow.sh . output
+        run: |
+          mkdir output 
+          build/build_workflow.sh . output
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
